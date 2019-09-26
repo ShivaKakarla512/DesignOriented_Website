@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Official Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" href = "style1.css"/>
+
+  <link rel="stylesheet" href="sick.css" />
+  <script type="text/javascript" src="parallax.min.js"></script>
+  <link rel="stylesheet" href="aos.css" />
+</head>
+<body>
+
+  <div class="Menu" id="header">
+    <a href="index.html"><img class="image" src="Images/Asset.png" alt="Logo" height="50px" width="60px"></a>
+    <ul class="Menu-list" data-offset="10">
+      <a href="index.html" ><li class="Menu-list-item" data-offset="20">
+        Home
+        <span class="Mask"><span>Home</span></span>
+        <span class="Mask"><span>Home</span></span>
+      </li></a>
+      <a href="scrolling.html" ><li class="Menu-list-item" data-offset="16">
+        Menu
+        <span class="Mask"><span>Menu</span></span>
+        <span class="Mask"><span>Menu</span></span>
+      </li></a>
+      <a href="resume.html" ><li class="Menu-list-item" data-offset="12">
+        Resources
+        <span class="Mask"><span>Resources</span></span>
+        <span class="Mask"><span>Resources</span></span>
+      </li></a>
+      <a href="contact.html" ><li class="Menu-list-item" data-offset="8">
+        Contact
+        <span class="Mask"><span>Contact</span></span>
+        <span class="Mask"><span>Contact</span></span>
+      </li></a>
+    </ul>
+  </div>
+
+  <div id="footer">
+    <a href="https://www.facebook.com/shiva.kakarla.14" target="_blank" ><img class="facebook" src="Images/facebook.png" alt="facebook" height="32px" width="32px"></a>
+    <a href="https://github.com/ShivaKakarla512" target="_blank" ><img class="github" src="Images/github.png" alt="github" height="35px" width="35px"></a>
+    <a href="https://www.linkedin.com/in/shanmukha-kakarla-7b5879170/" target="_blank" ><img class="linkedin" src="Images/linkedin.png" alt="linkedin" height="30px" width="30px"></a>
+    <a href="https://ecsutd.slack.com/messages/C71R9QB0W/team/UCMNN0JUB/" target="_blank" ><img class="slack" src="Images/slack.png" alt="slack" height="31px" width="31px"></a>
+    <a href="https://twitter.com/ShivaKakarla1" target="_blank" ><img class="twitter" src="Images/twitter.png" alt="twitter" height="35px" width="35px"></a>
+  </div>
+
+  <div class="wrapper">
+    <div class="parallax-1">
+      <div class="parallax-window1" data-parallax="scroll" data-image-src="Images/pic2.jpg"></div>
+      <div id="overlay"></div>
+      <div><h2>what i have<br/>done in the past...</h2></div>
+    </div>
+    <div class="parallax-2">
+      <div class="parallax-window2" data-parallax="scroll">
+        <div class="display" data-aos="fade-down">
+          <h2 data-aos="fade-up">Computer Science Summer Institution<br>Extension Program at UTD</h2>
+          <p>Computer Science Summer Institution<br>Extension Program at UTD.</p>
+          <p>It was a one month long program divided into two parts:</p>
+          <h3 data-aos="fade-right">Part One</h3>
+          <p>Introduction to computer usage and programming concepts, which includes<br>languages and technologies such as:</p>
+          <ul>
+            <li data-aos="fade-left">Java</li>
+            <li data-aos="fade-left">JavaScript</li>
+            <li data-aos="fade-left">Python</li>
+            <li data-aos="fade-left">Google App Engine</li>
+            <li data-aos="fade-left">CSS</li>
+            <li data-aos="fade-left">HTML</li>
+            <li data-aos="fade-left">Git</li>
+            <li data-aos="fade-left">Command Prompt</li>
+          </ul>
+          <h3 data-aos="fade-right">Part Two</h3>
+          <p>Experience of working in group projects and learning soft skills such as:</p>
+          <ul>
+            <li data-aos="fade-left">Career path planning</li>
+            <li data-aos="fade-left">Giving presentations</li>
+            <li data-aos="fade-left">Interviewing for a job</li>
+          </ul>
+        </div>
+        <div class="display" data-aos="fade-down">
+          <h2>CodePath Mobile App Development Course</h2>
+          <p data-aos="fade-right">Well<span>-</span>rounded exploration into product design, building apps, and exciting oppurtunities<br>in the tech indistry.</p>
+          <p data-aos="fade-right">This was an online 12<span>-</span>week long program that is broken down into three parts:</p>
+          <h3 data-aos="fade-left">App Design</h3>
+          <p data-aos="fade-right">Work with a group of 3 or 4 to design the next hot industry disrupting app.</p>
+          <p data-aos="fade-right">We didn't develop the application in the course, but we did everything needed before we can start<br>developing
+            such as making a layout of the app and deciding on wireframes for the app.</p>
+          <h3 data-aos="fade-left">Mobile Coding Labs</h3>
+          <p data-aos="fade-right">Build a fully functional iOS or Android Flashcard App from the ground up individually.</p>
+          <h3 data-aos="fade-left">Industry Panels</h3>
+          <p data-aos="fade-right">Get the inside scoop and talking about oppurtunities with successful tech professionals in industry panels.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.parallax-window1').parallax({imageSrc: 'Images/pic2.jpg'});
+    $('.parallax-window2').parallax();
+  </script>
+
+  <script src="aos.js"></script>
+  <script>
+  AOS.init();
+
+  // You can also pass an optional settings object
+  // below listed default settings
+  AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+  });
+  </script>
+
+</body>
+</html>

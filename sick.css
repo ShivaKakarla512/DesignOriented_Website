@@ -1,0 +1,77 @@
+a:hover {
+  text-decoration: none;
+}
+
+.image {
+  margin-bottom: 15px;
+}
+
+.Menu-list {
+  margin-top: 20px;
+  margin-left: 65%;
+  font-size: 20px;
+  line-height: 1;
+  display: inline-block;
+  flex-direction: row;
+}
+
+.Menu-list-item {
+  font-family: Qane;
+  padding-left: 25px;
+  position: relative;
+  color: transparent;
+  cursor: pointer;
+}
+.Menu-list-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 49%;
+  left: -10%;
+  right: -10%;
+  height: 4px;
+  border-radius: 4px;
+  margin-top: -2px;
+  background: #DC143C;
+  transform: scale(0);
+  transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+  z-index: 1;
+}
+.Mask {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  color: cornflowerblue;
+  top: 0;
+  height: 49%;
+  transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+}
+.Mask span {
+  display: block;
+}
+.Mask + .Mask {
+  top: 48.9%;
+  height: 51.1%;
+}
+.Mask + .Mask span {
+  transform: translateY(-49%);
+}
+.Menu-list-item:hover .Mask, .Menu-list-item:active .Mask {
+  color: orange;
+  transform: skewX(12deg) translateX(5px);
+}
+.Menu-list-item:hover .Mask + .Mask, .Menu-list-item:active .Mask + .Mask {
+  transform: skewX(12deg) translateX(-5px);
+}
+.Menu-list-item:hover::before, .Menu-list-item:active::before {
+  transform: scale(0);
+}
+@font-face {
+  font-family: Qane;
+  src: url(Fonts/QanelasSoftDEMO-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: QaneTwo;
+  src: url(Fonts/QanelasSoftDEMO-UltraLight.otf);
+}

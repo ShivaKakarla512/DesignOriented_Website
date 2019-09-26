@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Official Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" href = "style.css"/>
+</head>
+<body>
+  <script src="three.js"></script>
+  <script src="OrbitControls.js"></script>
+
+  <script>
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+    var renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    window.addEventListener('resize', function() {
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+      renderer.setSize(width, height);
+      camera.aspect = width/height;
+      camera.updatePorjectionMatrix();
+    });
+
+    controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+    var geometry = new THREE.SphereGeometry(1 , 16, 16);
+
+    var material = new THREE.MeshBasicMaterial({color: 0xFFFFFF, wireframe: true});
+    var sphere = new THREE.Mesh(geometry, material);
+    scene.add(sphere);
+
+    camera.position.z = 3;
+
+    var update = function() {
+      //sphere.rotation.x += 0.01;
+      //sphere.rotation.y += 0.01;
+    };
+
+    var render = function() {
+      renderer.render(scene, camera);
+    };
+
+    var GameLoop = function() {
+      requestAnimationFrame(GameLoop);
+      update();
+      render();
+    };
+
+    GameLoop();
+  </script>
+</body>
+</html>

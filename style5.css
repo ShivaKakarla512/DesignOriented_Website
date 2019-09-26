@@ -1,0 +1,288 @@
+h1 {
+  font-family: Aile;
+}
+
+p {
+  font-family: Roboto;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+#overlay {
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+  height: 800px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.parallax-1 {
+  width: 100%;
+  height: 800px;
+}
+
+.parallax-1 h2{
+  position: absolute;
+  top: 75%;
+  left: 7%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 100px;
+  font-family: Qane;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  background-size: 120% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(45deg,
+                    #c2e59c, #64b3f4);
+}
+
+
+.parallax-2 {
+  margin-bottom: 100px;
+  width: 100%;
+  height: 600px;
+}
+
+.parallax-2 span {
+  font-family: PS;
+}
+
+.parallax-2 ul{
+  font-family: QaneTwo;
+}
+
+.parallax-2 .display{
+  padding-bottom: 100px;
+}
+
+.parallax-2 .wtf{
+  font-family: Qane;
+}
+
+.parallax-2 .p{
+  font-family: QaneTwo;
+  color: black;
+  font-size: 25px;
+}
+
+.parallax-2 .wtf2{
+  font-family: QaneTwo;
+}
+
+.parallax-2 .sans{
+  font-family: sans-serif;
+}
+
+.parallax-2 h2{
+  margin-left: 100px;
+  margin-top: 80px;
+  font-size: 50px;
+  font-family: Qane;
+  color: #c2e59c;
+}
+
+.parallax-2 h3{
+  white-space: nowrap;
+  font-size: 30px;
+  font-family: Qane;
+  color: #64b3f4;
+}
+
+.parallax-2 p{
+  font-size: 25px;
+  font-family: QaneTwo;
+  color: black;
+}
+
+.parallax-window1{
+    height: 800px;
+    width: 100%;
+    background-image: url('Images/pic6.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.Menu-list {
+  display: inline-block;
+}
+
+.Menu-list-item {
+  display: inline-block;
+}
+
+#header{
+  position: relative;
+	top:0px;
+  height: 75px;
+}
+
+#header .image{
+	position: absolute;
+  top: 20%;
+  left: 1.5%;
+}
+
+#header .Menu-list {
+  position: absolute;
+  top: 2%;
+  left: 2.5%;
+}
+
+#footer {
+	bottom:0px;
+  height: 50px;
+}
+
+#footer img {
+	padding: 5px;
+}
+
+#footer a img:hover{
+	transform: scale(1.3, 1.3);
+}
+
+#header, #footer{
+	position: fixed;
+	display:block;
+	width: 100%;
+	background: rgba(0,0,0,0);
+	z-index:9;
+}
+
+.facebook {
+  margin-left: 43%;
+  margin-top: 5px;
+}
+
+.linkedin {
+  margin-top: 5px;
+}
+
+.github {
+  margin-top: 5px;
+}
+
+.slack {
+  margin-top: 5px;
+}
+
+.twitter {
+  margin-top: 5px;
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+}
+
+#contact-form {
+  padding-top: 0%;
+  padding-left: 18%;
+  padding-bottom: 5%;
+}
+
+#contact-form textarea{
+  height: 200px;
+}
+
+.contact-form {
+  position: absolute;
+  float: left;
+  margin-left: 150px;
+  margin-bottom: 75px;
+  margin-top: 25px;
+  top: 0%;
+  left: 0%;
+}
+
+.contact-title h2 {
+  font-family: IDB;
+  font-size: 80px;
+  line-height: 20px;
+}
+
+.contact-title h3 {
+  font-family: IDB;
+  font-size: 60px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: IDB;
+}
+
+input {
+  height: 45px;
+}
+
+textarea {
+  height: 200px;
+}
+
+form .submit {
+  background: #64b3f4;
+  border-color: transparent;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  font-family: Qane;
+  padding-top: 8px;
+}
+
+form .submit:hover {
+  background: #c2e59c;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: PS;
+  src: url(Fonts/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+  font-family: IDB;
+  src: url(Fonts/Quark-Light.otf);
+}
+
+@font-face {
+  font-family: Qane;
+  src: url(Fonts/QanelasSoftDEMO-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: QaneTwo;
+  src: url(Fonts/QanelasSoftDEMO-UltraLight.otf);
+}

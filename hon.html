@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Official Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" href = "style4.css"/>
+
+  <link rel="stylesheet" href="sick.css" />
+  <script type="text/javascript" src="parallax.min.js"></script>
+  <link rel="stylesheet" href="aos.css" />
+</head>
+<body>
+
+  <div class="Menu" id="header">
+    <a href="index.html"><img class="image" src="Images/Asset.png" alt="Logo" height="50px" width="60px"></a>
+    <ul class="Menu-list" data-offset="10">
+      <a href="index.html" ><li class="Menu-list-item" data-offset="20">
+        Home
+        <span class="Mask"><span>Home</span></span>
+        <span class="Mask"><span>Home</span></span>
+      </li></a>
+      <a href="scrolling.html" ><li class="Menu-list-item" data-offset="16">
+        Menu
+        <span class="Mask"><span>Menu</span></span>
+        <span class="Mask"><span>Menu</span></span>
+      </li></a>
+      <a href="resume.html" ><li class="Menu-list-item" data-offset="12">
+        Resources
+        <span class="Mask"><span>Resources</span></span>
+        <span class="Mask"><span>Resources</span></span>
+      </li></a>
+      <a href="contact.html" ><li class="Menu-list-item" data-offset="8">
+        Contact
+        <span class="Mask"><span>Contact</span></span>
+        <span class="Mask"><span>Contact</span></span>
+      </li></a>
+    </ul>
+  </div>
+
+  <div id="footer">
+    <a href="https://www.facebook.com/shiva.kakarla.14" target="_blank" ><img class="facebook" src="Images/facebook.png" alt="facebook" height="32px" width="32px"></a>
+    <a href="https://github.com/ShivaKakarla512" target="_blank" ><img class="github" src="Images/github.png" alt="github" height="35px" width="35px"></a>
+    <a href="https://www.linkedin.com/in/shanmukha-kakarla-7b5879170/" target="_blank" ><img class="linkedin" src="Images/linkedin.png" alt="linkedin" height="30px" width="30px"></a>
+    <a href="https://ecsutd.slack.com/messages/C71R9QB0W/team/UCMNN0JUB/" target="_blank" ><img class="slack" src="Images/slack.png" alt="slack" height="31px" width="31px"></a>
+    <a href="https://twitter.com/ShivaKakarla1" target="_blank" ><img class="twitter" src="Images/twitter.png" alt="twitter" height="35px" width="35px"></a>
+  </div>
+
+  <div class="wrapper">
+    <div class="parallax-1">
+      <div class="parallax-window1" data-parallax="scroll" data-image-src="Images/pic5.jpg"></div>
+      <div id="overlay"></div>
+      <div><h2>what i am<br/>proud of...</h2></div>
+    </div>
+    <div class="parallax-2">
+      <div class="parallax-window2" data-parallax="scroll">
+        <div class="display" data-aos="fade-down">
+          <h2>Honors Programs</h2>
+          <h3 data-aos="fade-left">Computer Science Computing Scholars Honors Program Student <span>(</span>CS<span>^</span>2<span>)</span></h3>
+          <p data-aos="fade-right">Intense Bachelor of Science in Computer Science Degree Program created for<br>exceptionally gifted students who wish to pursue a demanding course of study<br>
+          enriched throughout with research experiences.</p>
+
+          <h3 data-aos="fade-left">Honors College<span> - </span>Collegium V Student</h3>
+          <p data-aos="fade-right">Honors program that provides a four<span>-</span>year honors experience that encourages intellectually<br>creative, inquisitive, and highly motivated students to extend their
+            educational<br>experience beyond the scope of the traditional undergraduate curriculum.</p>
+        </div>
+        <div class="display" data-aos="fade-down">
+          <h2>Scholarships</h2>
+          <h3 data-aos="fade-left">UT Dallas AES Scholarship Awardee <span>(</span>Distinction Level<span>)</span></h3>
+          <p data-aos="fade-right">This scholarship is awarded on merit<span>-</span>based factors such as rigor of high school curriculum,<br>grades in all coursework, SAT or ACT scores, clas rank, etc.</p>
+        </div>
+        <div class="display" data-aos="fade-down">
+          <h2>Distinctions</h2>
+          <h3 data-aos="fade-left">Dean's List <span>(</span>First Semester<span> - </span>Fall 2018<span>)</span></h3>
+          <p data-aos="fade-right">This is a list of students that have completed at least 12 credit hours and rank among the<br>top 10<span class="sans">%</span> of students based on their grade<span>-</span>point average for that semester.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.parallax-window1').parallax({imageSrc: 'Images/pic5.jpg'});
+    $('.parallax-window2').parallax();
+  </script>
+
+  <script src="aos.js"></script>
+  <script>
+  AOS.init();
+
+  // You can also pass an optional settings object
+  // below listed default settings
+  AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+  });
+  </script>
+
+</body>
+</html>

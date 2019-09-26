@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Official Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" href = "style.css"/>
+
+  <script type="text/javascript" src="parallax.min.js"></script>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="parallax-1">
+      <div class="parallax-window1" data-parallax="scroll" data-image-src="Images/pic1.jpg"></div>
+    </div>
+    <div class="parallax-2">
+      <div class="parallax-window2" data-parallax="scroll" data-image-src="Images/pic2.jpg"></div>
+    </div>
+    <div class="parallax-3">
+      <div class="parallax-window3" data-parallax="scroll" data-image-src="Images/pic3.jpg"></div>
+    </div>
+  </div>
+
+  <script>
+    $('.parallax-window1').parallax({imageSrc: 'Images/pic1.jpg'});
+    $('.parallax-window2').parallax({imageSrc: 'Images/pic2.jpg'});
+    $('.parallax-window3').parallax({imageSrc: 'Images/pic3.jpg'});
+  </script>
+
+</body>
+</html>

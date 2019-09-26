@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Official Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" href = "style6.css"/>
+
+  <link rel="stylesheet" href="sick.css" />
+  <script type="text/javascript" src="parallax.min.js"></script>
+  <link rel="stylesheet" href="aos.css" />
+</head>
+<body>
+
+
+  <div class="Menu" id="header">
+    <a href="index.html"><img class="image" src="Images/Asset.png" alt="Logo" height="50px" width="60px"></a>
+    <ul class="Menu-list" data-offset="10">
+      <a href="index.html" ><li class="Menu-list-item" data-offset="20">
+        Home
+        <span class="Mask"><span>Home</span></span>
+        <span class="Mask"><span>Home</span></span>
+      </li></a>
+      <a href="scrolling.html" ><li class="Menu-list-item" data-offset="16">
+        Menu
+        <span class="Mask"><span>Menu</span></span>
+        <span class="Mask"><span>Menu</span></span>
+      </li></a>
+      <a href="resume.html" ><li class="Menu-list-item" data-offset="12">
+        Resources
+        <span class="Mask"><span>Resources</span></span>
+        <span class="Mask"><span>Resources</span></span>
+      </li></a>
+      <a href="contact.html" ><li class="Menu-list-item" data-offset="8">
+        Contact
+        <span class="Mask"><span>Contact</span></span>
+        <span class="Mask"><span>Contact</span></span>
+      </li></a>
+    </ul>
+  </div>
+
+  <div id="footer">
+    <a href="https://www.facebook.com/shiva.kakarla.14" target="_blank" ><img class="facebook" src="Images/facebook.png" alt="facebook" height="32px" width="32px"></a>
+    <a href="https://github.com/ShivaKakarla512" target="_blank" ><img class="github" src="Images/github.png" alt="github" height="35px" width="35px"></a>
+    <a href="https://www.linkedin.com/in/shanmukha-kakarla-7b5879170/" target="_blank" ><img class="linkedin" src="Images/linkedin.png" alt="linkedin" height="30px" width="30px"></a>
+    <a href="https://ecsutd.slack.com/messages/C71R9QB0W/team/UCMNN0JUB/" target="_blank" ><img class="slack" src="Images/slack.png" alt="slack" height="31px" width="31px"></a>
+    <a href="https://twitter.com/ShivaKakarla1" target="_blank" ><img class="twitter" src="Images/twitter.png" alt="twitter" height="35px" width="35px"></a>
+  </div>
+
+  <div class="wrapper">
+    <div class="parallax-1">
+      <div class="parallax-window1" data-parallax="scroll" data-image-src="Images/pic7.jpg"></div>
+      <div id="overlay"></div>
+      <div><h2>Want to<br>know more?</h2></div>
+    </div>
+    <div class="parallax-2">
+      <div class="parallax-window2" data-parallax="scroll">
+        <div class="display" data-aos="fade-down">
+          <h2>My References</h2>
+          <h3 data-aos="fade-right">Professor John Cole</h3>
+          <p data-aos="fade-left">john.cole<span>@</span>utdallas.edu</p>
+          <p data-aos="fade-left">The director for Google CSSI Extension Program, Faculty Sponsor for chapters<br>of ACM, and was my <span class="p">f</span>irst exposure to UTD itself.</p>
+
+          <h3 data-aos="fade-right">Doctor Ivor Page</h3>
+          <p data-aos="fade-left">ivor<span>@</span>utdallas.edu</p>
+          <p data-aos="fade-left"> The director of the Computing Scholars <span>(</span>CS<span>^</span>2<span>)</span> Honors Program who accepted<br>my application, graded my entrance exam,
+            and has seen me work as part of his honors classes.</p>
+        </div>
+        <div class="display" data-aos="fade-down">
+          <h2>Useful Links</h2>
+          <a href="https://docs.google.com/document/d/1C6HZx_SevuSq69sHNsPVolT3IIeW5YYaTRI0wIb6t-k/edit?usp=sharing" target="_blank" ><h3 data-aos="fade-left">Resume</h3></a>
+          <a href="https://drive.google.com/file/d/1C4OIRPLI03p1DyDfcIiO2TDawd8qVB7D/view?usp=sharing" target="_blank" ><h3 data-aos="fade-left">CodePath Course Completion</h3></a>
+          <a href="https://www.utdallas.edu/news/students/fall-2018-deans-list/" target="_blank" ><h3 data-aos="fade-left">Dean's List : Fall 2018</h3></a>
+          <a href="http://www.uschess.org/msa/MbrDtlMain.php?15295040" target="_blank" ><h3 data-aos="fade-left">USCF Ranking</h3></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.parallax-window1').parallax({imageSrc: 'Images/pic7.jpg'});
+    $('.parallax-window2').parallax();
+  </script>
+
+  <script src="aos.js"></script>
+  <script>
+  AOS.init();
+
+  // You can also pass an optional settings object
+  // below listed default settings
+  AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+  });
+  </script>
+
+  <script type="text/javascript" src="particles.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

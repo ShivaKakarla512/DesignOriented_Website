@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Official Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="fullpage.css" />
+  <link rel="stylesheet" href="sick.css" />
+  <script type="text/javascript" src="fullpage.js"></script>
+</head>
+<body>
+
+  <div class="Menu" id="header">
+    <a href="index.html"><img class="image" src="Images/Asset.png" alt="Logo" height="50px" width="60px"></a>
+    <ul class="Menu-list" data-offset="10">
+      <a href="index.html" ><li class="Menu-list-item" data-offset="20">
+        Home
+        <span class="Mask"><span>Home</span></span>
+        <span class="Mask"><span>Home</span></span>
+      </li></a>
+      <a href="scrolling.html" ><li class="Menu-list-item" data-offset="16">
+        Menu
+        <span class="Mask"><span>Menu</span></span>
+        <span class="Mask"><span>Menu</span></span>
+      </li></a>
+      <a href="resume.html" ><li class="Menu-list-item" data-offset="12">
+        Resources
+        <span class="Mask"><span>Resources</span></span>
+        <span class="Mask"><span>Resources</span></span>
+      </li></a>
+      <a href="contact.html" ><li class="Menu-list-item" data-offset="8">
+        Contact
+        <span class="Mask"><span>Contact</span></span>
+        <span class="Mask"><span>Contact</span></span>
+      </li></a>
+    </ul>
+  </div>
+
+  <div id="footer">
+    <a href="https://www.facebook.com/shiva.kakarla.14" target="_blank" ><img class="facebook" src="Images/facebook.png" alt="facebook" height="32px" width="32px"></a>
+    <a href="https://github.com/ShivaKakarla512" target="_blank" ><img class="github" src="Images/github.png" alt="github" height="35px" width="35px"></a>
+    <a href="https://www.linkedin.com/in/shanmukha-kakarla-7b5879170/" target="_blank" ><img class="linkedin" src="Images/linkedin.png" alt="linkedin" height="30px" width="30px"></a>
+    <a href="https://ecsutd.slack.com/messages/C71R9QB0W/team/UCMNN0JUB/" target="_blank" ><img class="slack" src="Images/slack.png" alt="slack" height="31px" width="31px"></a>
+    <a href="https://twitter.com/ShivaKakarla1" target="_blank" ><img class="twitter" src="Images/twitter.png" alt="twitter" height="35px" width="35px"></a>
+  </div>
+
+  <div id="fullpage">
+    <div class="section" id="section1">
+      <div id="overlay"></div>
+      <h1>Education</h1>
+      <p>Find details about my education, relevant coursework, and technical skills.</p>
+      <a href="edu.html"><button type="button"><span>CAPABILITIES<span></button></a>
+    </div>
+
+    <div class="section" id="section2">
+      <div id="overlay"></div>
+      <h1>Work Experience</h1>
+      <p>Find details about my work, internship, and volunteer experience.</p>
+      <a href="exp.html"><button type="button"><span>EXPERIENCE<span></button></a>
+    </div>
+
+    <div class="section" id="section3">
+      <div id="overlay"></div>
+      <h1>Projects</h1>
+      <p>Find details about my personal, college, internship, and work related projects.</p>
+      <a href="pro.html"><button type="button"><span>DEDICATION<span></button></a>
+    </div>
+
+    <div class="section" id="section4">
+      <div id="overlay1"></div>
+      <h1>Activities</h1>
+      <p>Find out about my extracurricular activities, leadership positions, and club participation.</p>
+      <a href="act.html"><button type="button"><span>INVOLVEMENT<span></button></a>
+    </div>
+
+    <div class="section" id="section5">
+      <div id="overlay1"></div>
+      <h1>Honors</h1>
+      <p>Find out about my awards, scholarships, and honors programs that I am participating in.</p>
+      <a href="hon.html"><button type="button"><span>DISTINCTION<span></button></a>
+    </div>
+  </div>
+
+  <script src="wheel-indicator.js"></script>
+
+  <script>
+    var WheelIndicator = require('wheel-indicator'); // ← if you use build system
+
+    var indicator = new WheelIndicator({
+    elem: document.querySelector('.element'),
+    callback: function(e){
+      console.log(e.direction) // "up" or "down"
+    }
+    });
+
+    //The method call
+    indicator.getOption('preventMouse'); // true
+  </script>
+
+  <script>
+
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+      //Navigation
+      menu: '#menu',
+      lockAnchors: true,
+      anchors:['firstPage', 'secondPage'],
+      navigation: true,
+      navigationPosition: 'right',
+      navigationTooltips: ['Education', 'Work Experience', 'Projects', 'Activities', 'Honors'],
+      showActiveTooltip: false,
+      slidesNavigation: false,
+      slidesNavPosition: 'bottom',
+
+      //Scrolling
+      css3: true,
+      scrollingSpeed: 1000,
+      autoScrolling: true,
+      fitToSection: true,
+      fitToSectionDelay: 1000,
+      scrollBar: false,
+      easing: 'easeInOutCubic',
+      easingcss3: 'ease',
+      loopBottom: true,
+      loopTop: false,
+      loopHorizontal: false,
+      continuousVertical: false,
+      continuousHorizontal: false,
+      scrollHorizontally: false,
+      interlockedSlides: false,
+      dragAndMove: true,
+      offsetSections: false,
+      resetSliders: false,
+      fadingEffect: true,
+      normalScrollElements: '#element1, .element2',
+      scrollOverflow: false,
+      scrollOverflowReset: false,
+      scrollOverflowOptions: null,
+      touchSensitivity: 15,
+      normalScrollElementTouchThreshold: 5,
+      bigSectionsDestination: null,
+
+      //Accessibility
+      keyboardScrolling: true,
+      animateAnchor: true,
+      recordHistory: true,
+
+      //Design
+      controlArrows: true,
+      verticalCentered: true,
+      sectionsColor : ['#ccc', '#fff'],
+      paddingTop: '0em',
+      paddingBottom: '0px',
+      fixedElements: '#header, .footer',
+      responsiveWidth: 0,
+      responsiveHeight: 0,
+      responsiveSlides: true,
+      parallax: false,
+      parallaxOptions: {type: 'reveal', percentage: 60, property: 'translate'},
+
+      //Custom selectors
+      sectionSelector: '.section',
+      slideSelector: '.slide',
+
+      lazyLoading: true,
+
+      //events
+      onLeave: function(index, nextIndex, direction){},
+      afterLoad: function(anchorLink, index){},
+      afterRender: function(){},
+      afterResize: function(){},
+      afterResponsive: function(isResponsive){},
+      afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+      onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+    });
+  });
+  </script>
+
+</body>
+</html>

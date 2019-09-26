@@ -1,0 +1,266 @@
+* {
+  margin: 0; padding: 0;
+}
+
+a {
+  border: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hr {
+  position: absolute;
+  border-color: white;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-top-width: 3px;
+  width: 40%;
+  height: 100%;
+  left: 29%;
+  top: 44%;
+}
+
+.selector {
+  top: 87%;
+}
+
+.selector .one {
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
+  border-top-width: 1px;
+  top: 0%;
+}
+
+.selector .two {
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
+  border-top-width: 1px;
+  top: 100%;
+}
+
+.selector .three {
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.1);
+  width: 0.03%;
+  height: 100%;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  left: 0%;
+}
+
+.selector .four {
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.1);
+  width: 0.005%;
+  height: 100%;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  left: 100%;
+}
+
+#container {
+  overflow: hidden;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+#background_video {
+  position: absolute;
+
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+
+  object-fit: cover;
+  height: 100%; width: 100%;
+}
+
+#video_cover {
+  position: absolute;
+
+  width: 100%; height: 100%;
+
+  background: url('video_cover.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#overlay {
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.partOne {
+  position: absolute;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: Qane;
+  color: #FFDAB9;
+  letter-spacing: 5px;
+  left: 43%;
+  top: 24%;
+}
+
+.partTwo {
+  position: absolute;
+  font-size: 100px;
+  margin-top: -15px;
+  text-transform: uppercase;
+  font-family: Qane;
+  color: #E6E6FA;
+  letter-spacing: 5px;
+  left: 33.5%;
+  top: 32%;
+}
+
+.sub_head {
+  position: absolute;
+  text-transform: uppercase;
+  color: #FFDAB9;
+  font-family: QaneTwo;
+  font-size: 15px;
+  letter-spacing: 5px;
+  left: 33.5%;
+  top: 46%;
+}
+
+#main_content .info {
+  color: rgba(255,255,255,0.5);
+  font-size: 12px;
+}
+
+.enterButton {
+  position: absolute;
+  top: 85%;
+  left: 45%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.skew-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.skew-button {
+  cursor: pointer;
+  outline: none;
+  transform: translate3d(-50%, -50%, 0);
+  backface-visibility: hidden;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-family: Qane;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.skew-button span {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  z-index: 3;
+}
+.skew-button:before, .skew-button span:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 30px;
+  border: 0px solid #0e3876;
+  z-index: 2;
+}
+.skew-button span:before {
+  display: block;
+  transform: translate(-50%, -50%);
+  z-indeX: -1;
+}
+.skew-button:after {
+  transition: all 100ms ease-out;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scaleX(0);
+  width: 100%;
+  height: 100%;
+  border: 0px solid transparent;
+  z-index: 1;
+}
+.skew-button:hover span:before {
+  animation: fill 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fill {
+  0% {
+    background-color: rgba(14, 56, 118, 0);
+  }
+  20% {
+    opacity: 0.5;
+    border-width: 15px;
+    border-color: #092248;
+  }
+  100% {
+    opacity: 0.5;
+    border-width: 1px;
+    background-color: rgba(14, 56, 118, 0);
+  }
+}
+
+
+:root {
+    --ten: 320; /* accessible everywhere */
+}
+
+@font-face {
+  font-family: Aile;
+  src: url(Fonts/Ailerons-Typeface.otf);
+}
+
+@font-face {
+  font-family: QaneTwo;
+  src: url(Fonts/QanelasSoftDEMO-UltraLight.otf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Advent;
+  src: url(Fonts/AdventPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: Bellerose;
+  src: url(Fonts/Bellerose.ttf);
+}
+
+@font-face {
+  font-family: Quark;
+  src: url(Fonts/Quark-Light.otf);
+}
+
+@font-face {
+  font-family: Qane;
+  src: url(Fonts/QanelasSoftDEMO-ExtraBold.otf);
+}
